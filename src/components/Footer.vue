@@ -2,7 +2,7 @@
   <footer class="bg-gray-900 text-white relative overflow-hidden">
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-5">
-      <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\"40\" height=\"40\" viewBox=\"0 0 40 40\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"%23ffffff\" fill-opacity=\"0.1\"%3E%3Cpath d=\"M20 20c0 11.046-8.954 20-20 20v-40c11.046 0 20 8.954 20 20z\"/%3E%3C/g%3E%3C/svg%3E');"></div>
+      <div class="absolute inset-0" :style="{ backgroundImage: 'url(data:image/svg+xml,%3Csvg width=40 height=40 viewBox=0 0 40 40 xmlns=http://www.w3.org/2000/svg%3E%3Cg fill=%23ffffff fill-opacity=0.1%3E%3Cpath d=M20 20c0 11.046-8.954 20-20 20v-40c11.046 0 20 8.954 20 20z/%3E%3C/g%3E%3C/svg%3E)' }"></div>
     </div>
 
     <div class="relative z-10">
