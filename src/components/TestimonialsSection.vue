@@ -185,7 +185,7 @@
 </template>
 
 <script setup>
-import { StarIcon } from '@heroicons/vue/solid'
+import StarIcon from '@heroicons/vue/24/solid/StarIcon'
 </script>
 
 <style scoped>
