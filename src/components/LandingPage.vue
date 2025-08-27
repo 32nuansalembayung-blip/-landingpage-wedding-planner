@@ -137,10 +137,12 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import Bars3Icon from '@heroicons/vue/24/outline/Bars3Icon'
-import XMarkIcon from '@heroicons/vue/24/outline/XMarkIcon'
-import ChevronUpIcon from '@heroicons/vue/24/outline/ChevronUpIcon'
-import HeartIcon from '@heroicons/vue/24/outline/HeartIcon'
+import { 
+  Bars3Icon, 
+  XMarkIcon, 
+  ChevronUpIcon, 
+  HeartIcon 
+} from '@heroicons/vue/outline'
 
 // Import components
 import HeroSection from './HeroSection.vue'

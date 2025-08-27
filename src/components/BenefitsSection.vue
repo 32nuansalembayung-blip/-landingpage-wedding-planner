@@ -166,16 +166,18 @@
 </template>
 
 <script setup>
-import ClockIcon from '@heroicons/vue/24/outline/ClockIcon'
-import CurrencyDollarIcon from '@heroicons/vue/24/outline/CurrencyDollarIcon'
-import FolderIcon from '@heroicons/vue/24/outline/FolderIcon'
-import CheckIcon from '@heroicons/vue/24/outline/CheckIcon'
-import XMarkIcon from '@heroicons/vue/24/outline/XMarkIcon'
-import SparklesIcon from '@heroicons/vue/24/outline/SparklesIcon'
-import DevicePhoneMobileIcon from '@heroicons/vue/24/outline/DevicePhoneMobileIcon'
-import CloudIcon from '@heroicons/vue/24/outline/CloudIcon'
-import ChatBubbleLeftRightIcon from '@heroicons/vue/24/outline/ChatBubbleLeftRightIcon'
-import GiftIcon from '@heroicons/vue/24/outline/GiftIcon'
+import { 
+  ClockIcon, 
+  CurrencyDollarIcon, 
+  FolderIcon, 
+  CheckIcon, 
+  XMarkIcon, 
+  SparklesIcon,
+  DevicePhoneMobileIcon,
+  CloudIcon,
+  ChatBubbleLeftRightIcon,
+  GiftIcon
+} from '@heroicons/vue/outline'
 </script>
 
 <style scoped>

@@ -142,9 +142,7 @@
 </template>
 
 <script setup>
-import CalculatorIcon from '@heroicons/vue/24/outline/CalculatorIcon'
-import EnvelopeIcon from '@heroicons/vue/24/outline/EnvelopeIcon'
-import UserGroupIcon from '@heroicons/vue/24/outline/UserGroupIcon'
+import { CalculatorIcon, EnvelopeIcon, UserGroupIcon } from '@heroicons/vue/outline'
 </script>
 
 <style scoped>

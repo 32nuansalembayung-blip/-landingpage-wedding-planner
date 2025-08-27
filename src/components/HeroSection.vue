@@ -82,9 +82,7 @@
 </template>
 
 <script setup>
-import HeartIcon from '@heroicons/vue/24/outline/HeartIcon'
-import ShieldCheckIcon from '@heroicons/vue/24/outline/ShieldCheckIcon'
-import SparklesIcon from '@heroicons/vue/24/outline/SparklesIcon'
+import { HeartIcon, ShieldCheckIcon, SparklesIcon } from '@heroicons/vue/outline'
 </script>
 
 <style scoped>
