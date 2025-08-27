@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-white relative overflow-hidden">
+  <section class="py-12 sm:py-16 lg:py-20 bg-white relative overflow-hidden">
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-5">
       <div class="absolute inset-0" :style="{ backgroundImage: 'url(data:image/svg+xml,%3Csvg width=60 height=60 viewBox=0 0 60 60 xmlns=http://www.w3.org/2000/svg%3E%3Cg fill=none fill-rule=evenodd%3E%3Cg fill=%23ff69b4 fill-opacity=0.1%3E%3Ccircle cx=30 cy=30 r=4/%3E%3C/g%3E%3C/g%3E%3C/svg%3E)' }"></div>
@@ -7,8 +7,8 @@
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
-      <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+      <div class="text-center mb-8 sm:mb-12 lg:mb-16">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
           Apa Kata 
           <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
             Pasangan Bahagia?
@@ -20,10 +20,10 @@
       </div>
 
       <!-- Testimonials Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
         <!-- Testimonial 1 -->
         <div class="group relative">
-          <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-pink-100">
+                      <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-pink-100">
             <!-- Quote Icon -->
             <div class="absolute top-4 right-4 opacity-20">
               <svg class="w-8 h-8 text-pink-500" fill="currentColor" viewBox="0 0 24 24">
@@ -65,7 +65,7 @@
 
         <!-- Testimonial 2 -->
         <div class="group relative">
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-blue-100">
+                      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-blue-100">
             <!-- Quote Icon -->
             <div class="absolute top-4 right-4 opacity-20">
               <svg class="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
@@ -107,7 +107,7 @@
 
         <!-- Testimonial 3 -->
         <div class="group relative">
-          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-green-100">
+                      <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-green-100">
             <!-- Quote Icon -->
             <div class="absolute top-4 right-4 opacity-20">
               <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 24 24">

@@ -54,8 +54,8 @@
         </div>
 
         <!-- Mobile Navigation Menu -->
-        <div v-show="mobileMenuOpen" class="md:hidden">
-          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100">
+        <div v-show="mobileMenuOpen" class="md:hidden transition-all duration-300 ease-in-out">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100 shadow-lg">
             <a href="#home" class="text-gray-700 hover:text-pink-600 block px-3 py-2 text-base font-medium transition-colors duration-300">
               Beranda
             </a>
@@ -82,29 +82,29 @@
     </nav>
 
     <!-- Main Content -->
-    <main>
+    <main class="relative">
       <!-- Hero Section -->
       <section id="home">
         <HeroSection />
       </section>
 
       <!-- Features Section -->
-      <section id="features">
+      <section id="features" class="relative">
         <FeaturesSection />
       </section>
 
       <!-- Benefits Section -->
-      <section id="benefits">
+      <section id="benefits" class="relative">
         <BenefitsSection />
       </section>
 
       <!-- Testimonials Section -->
-      <section id="testimonials">
+      <section id="testimonials" class="relative">
         <TestimonialsSection />
       </section>
 
       <!-- Pricing Section -->
-      <section id="pricing">
+      <section id="pricing" class="relative">
         <PricingSection />
       </section>
     </main>
@@ -113,7 +113,7 @@
     <Footer />
 
     <!-- Floating Action Button -->
-    <div class="fixed bottom-6 right-6 z-40">
+    <div class="fixed bottom-6 right-6 z-50">
       <button 
         @click="scrollToTop"
         v-show="showScrollTop"
@@ -124,7 +124,7 @@
     </div>
 
     <!-- Floating CTA Button -->
-    <div class="fixed bottom-6 left-6 z-40 hidden lg:block">
+    <div class="fixed bottom-6 left-6 z-50 hidden lg:block">
       <div class="bg-white rounded-full shadow-lg border border-gray-200 p-1">
         <button class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-3 rounded-full text-sm font-semibold hover:shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center space-x-2">
           <HeartIcon class="w-5 h-5" />

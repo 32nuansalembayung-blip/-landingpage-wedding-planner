@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-white relative overflow-hidden">
+  <section class="py-12 sm:py-16 lg:py-20 bg-white relative overflow-hidden">
     <!-- Background Pattern -->
     <div class="absolute inset-0 opacity-5">
       <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,182,193,0.3) 1px, transparent 0); background-size: 20px 20px;"></div>
@@ -7,8 +7,8 @@
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
-      <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+      <div class="text-center mb-8 sm:mb-12 lg:mb-16">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
           Fitur Utama yang 
           <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
             Memudahkan
@@ -20,18 +20,18 @@
       </div>
 
       <!-- Features Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
         <!-- Budget Planner Feature -->
         <div class="group relative">
-          <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-8 h-full border border-pink-100 hover:border-pink-200 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                      <div class="bg-gradient-to-br from-pink-50 to-purple-50 rounded-2xl p-4 sm:p-6 lg:p-8 h-full border border-pink-100 hover:border-pink-200 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <!-- Icon -->
-            <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-              <CalculatorIcon class="w-8 h-8 text-white" />
-            </div>
+                          <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <CalculatorIcon class="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
+              </div>
             
             <!-- Content -->
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Budget Planner</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Budget Planner</h3>
+            <p class="text-gray-600 mb-4 sm:mb-6 leading-relaxed">
               Kalkulator interaktif yang membantu Anda merencanakan budget pernikahan dengan detail dan akurat
             </p>
             
@@ -62,15 +62,15 @@
 
         <!-- Online Invitation Feature -->
         <div class="group relative">
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 h-full border border-blue-100 hover:border-blue-200 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                      <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-4 sm:p-6 lg:p-8 h-full border border-blue-100 hover:border-blue-200 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <!-- Icon -->
-            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-              <EnvelopeIcon class="w-8 h-8 text-white" />
-            </div>
+                          <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <EnvelopeIcon class="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
+              </div>
             
             <!-- Content -->
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Online Invitation</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Online Invitation</h3>
+            <p class="text-gray-600 mb-4 sm:mb-6 leading-relaxed">
               Buat undangan digital yang elegan dan personal dengan template yang dapat disesuaikan
             </p>
             
@@ -91,15 +91,15 @@
 
         <!-- RSVP Tracking Feature -->
         <div class="group relative">
-          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 h-full border border-green-100 hover:border-green-200 transition-all duration-300 hover:shadow-xl hover:scale-105">
+                      <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-4 sm:p-6 lg:p-8 h-full border border-green-100 hover:border-green-200 transition-all duration-300 hover:shadow-xl hover:scale-105">
             <!-- Icon -->
-            <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-              <UserGroupIcon class="w-8 h-8 text-white" />
-            </div>
+                          <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
+                <UserGroupIcon class="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-white" />
+              </div>
             
             <!-- Content -->
-            <h3 class="text-xl font-bold text-gray-900 mb-4">RSVP Tracking</h3>
-            <p class="text-gray-600 mb-6 leading-relaxed">
+            <h3 class="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">RSVP Tracking</h3>
+            <p class="text-gray-600 mb-4 sm:mb-6 leading-relaxed">
               Pantau konfirmasi kehadiran tamu secara real-time dan kelola daftar tamu dengan mudah
             </p>
             

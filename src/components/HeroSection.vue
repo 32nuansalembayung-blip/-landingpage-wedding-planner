@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-white to-blue-50">
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-pink-50 via-white to-blue-50 px-4">
     <!-- Background Decorative Elements -->
     <div class="absolute inset-0 overflow-hidden">
       <div class="absolute top-20 left-10 w-32 h-32 bg-pink-200 rounded-full opacity-20 animate-pulse"></div>
@@ -21,7 +21,7 @@
       <div class="space-y-8">
         <!-- Main Headline -->
         <div class="space-y-4">
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
             <span class="block">Plan Your Dream Wedding,</span>
             <span class="block bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
               Stress-Free
@@ -29,7 +29,7 @@
           </h1>
           
           <!-- Sub-headline -->
-          <p class="text-lg sm:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p class="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Atur budget, undangan online, dan semua persiapan hanya dari satu aplikasi.
           </p>
         </div>

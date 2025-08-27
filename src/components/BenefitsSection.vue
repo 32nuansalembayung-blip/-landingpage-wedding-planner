@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
+  <section class="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-blue-50 relative overflow-hidden">
     <!-- Background Decorative Elements -->
     <div class="absolute inset-0">
       <div class="absolute top-10 right-10 w-40 h-40 bg-pink-200 rounded-full opacity-10 animate-pulse"></div>
@@ -8,8 +8,8 @@
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
-      <div class="text-center mb-16">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+      <div class="text-center mb-8 sm:mb-12 lg:mb-16">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
           Mengapa Memilih 
           <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
             Platform Kami?
@@ -21,10 +21,10 @@
       </div>
 
       <!-- Benefits Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <!-- Benefit 1: Save Time -->
         <div class="group relative">
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100">
+          <div class="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100">
             <!-- Icon Container -->
             <div class="relative mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -56,7 +56,7 @@
 
         <!-- Benefit 2: Avoid Overbudget -->
         <div class="group relative">
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100">
+          <div class="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100">
             <!-- Icon Container -->
             <div class="relative mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -87,8 +87,8 @@
         </div>
 
         <!-- Benefit 3: All Organized -->
-        <div class="group relative md:col-span-2 lg:col-span-1">
-          <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100">
+        <div class="group relative">
+          <div class="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-gray-100">
             <!-- Icon Container -->
             <div class="relative mb-6">
               <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -166,18 +166,16 @@
 </template>
 
 <script setup>
-import { 
-  ClockIcon, 
-  CurrencyDollarIcon, 
-  FolderIcon, 
-  CheckIcon, 
-  XMarkIcon, 
-  SparklesIcon,
-  DevicePhoneMobileIcon,
-  CloudIcon,
-  ChatBubbleLeftRightIcon,
-  GiftIcon
-} from '@heroicons/vue/outline'
+import ClockIcon from '@heroicons/vue/24/outline/ClockIcon'
+import CurrencyDollarIcon from '@heroicons/vue/24/outline/CurrencyDollarIcon'
+import FolderIcon from '@heroicons/vue/24/outline/FolderIcon'
+import CheckIcon from '@heroicons/vue/24/outline/CheckIcon'
+import XMarkIcon from '@heroicons/vue/24/outline/XMarkIcon'
+import SparklesIcon from '@heroicons/vue/24/outline/SparklesIcon'
+import DevicePhoneMobileIcon from '@heroicons/vue/24/outline/DevicePhoneMobileIcon'
+import CloudIcon from '@heroicons/vue/24/outline/CloudIcon'
+import ChatBubbleLeftRightIcon from '@heroicons/vue/24/outline/ChatBubbleLeftRightIcon'
+import GiftIcon from '@heroicons/vue/24/outline/GiftIcon'
 </script>
 
 <style scoped>
