@@ -1,15 +1,15 @@
 <template>
-  <section class="testimonials">
-    <div class="container">
-      <header class="section-header">
-        <h2 class="title">Kata Mereka</h2>
-        <p class="desc">Testimoni singkat yang membangun kepercayaan.</p>
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-5">
+      <header class="text-center mb-12 animate-on-scroll">
+        <h2 class="font-playfair text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-4">Kata Mereka</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Testimoni singkat yang membangun kepercayaan.</p>
       </header>
-      <div class="grid">
-        <figure class="tcard" v-for="(t, i) in data" :key="i">
-          <img :src="t.photo" alt="" class="avatar" />
-          <blockquote>“{{ t.quote }}”</blockquote>
-          <figcaption>— {{ t.name }}</figcaption>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <figure class="bg-white border border-gray-200 rounded-2xl p-6 text-center shadow-lg animate-on-scroll" v-for="(t, i) in data" :key="i">
+          <img :src="t.photo" alt="" class="w-16 h-16 rounded-full object-cover mx-auto mb-4" />
+          <blockquote class="text-gray-900 mb-3 text-lg leading-relaxed">"{{ t.quote }}"</blockquote>
+          <figcaption class="text-gray-600 font-medium">— {{ t.name }}</figcaption>
         </figure>
       </div>
     </div>
@@ -25,15 +25,25 @@ const data = [
 </script>
 
 <style scoped>
-.testimonials { padding: 3.5rem 0; background:#ffffff; }
-.container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-.section-header { text-align:center; margin-bottom: 1.5rem; }
-.title { font-family: 'Playfair Display', serif; font-size: clamp(1.6rem, 4vw, 2.1rem); }
-.desc { color:#4b5563; }
-.grid { display:grid; grid-template-columns: repeat(3,1fr); gap: 1rem; }
-.tcard { background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:1rem; text-align:center; box-shadow: 0 10px 30px rgba(17,24,39,.05); }
-.avatar { width:64px; height:64px; border-radius:999px; object-fit:cover; margin-bottom:.5rem; }
-blockquote { color:#111827; margin:0 0 .25rem; }
-figcaption { color:#6b7280; font-size:.9rem; }
-@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+/* Animation classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger animation for cards */
+.animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+.animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+.animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+
+/* Custom font family */
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
 </style>

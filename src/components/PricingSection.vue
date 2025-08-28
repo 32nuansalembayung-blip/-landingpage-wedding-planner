@@ -1,33 +1,44 @@
 <template>
-  <section class="pricing" id="signup">
-    <div class="container">
-      <header class="section-header">
-        <h2 class="title">Mulai Gratis</h2>
-        <p class="desc">Semua fitur dasar tanpa biaya. Upgrade nanti saat dibutuhkan.</p>
+  <section class="py-16 bg-gradient-to-r from-pink-100 via-white to-blue-100" id="signup">
+    <div class="max-w-6xl mx-auto px-5 text-center">
+      <header class="mb-12 animate-on-scroll">
+        <h2 class="font-playfair text-4xl md:text-5xl lg:text-6xl text-gray-900 mb-4">Mulai Gratis</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto">Semua fitur dasar tanpa biaya. Upgrade nanti saat dibutuhkan.</p>
       </header>
-      <div class="card">
-        <div class="price">Rp 0</div>
-        <ul class="list">
+      <div class="inline-block bg-white border border-gray-200 rounded-2xl p-8 shadow-lg animate-on-scroll">
+        <div class="font-playfair text-6xl mb-4 text-gray-900">Rp 0</div>
+        <ul class="list-none p-0 m-0 mb-6 text-gray-700 space-y-2 text-lg">
           <li>Budget Planner</li>
           <li>Undangan Digital</li>
           <li>RSVP Tracking</li>
         </ul>
-        <a href="#" class="btn-primary">Daftar Gratis</a>
+        <a href="#" class="inline-block px-8 py-4 rounded-full bg-gray-900 text-white font-semibold text-lg hover:bg-gray-800 transition-colors duration-200">
+          Daftar Gratis
+        </a>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+// No external dependencies needed
 </script>
 
 <style scoped>
-.pricing { padding: 3.5rem 0; background: linear-gradient(90deg, #ffe4e6, #ffffff 50%, #e0f2fe); }
-.container { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; text-align:center; }
-.card { display:inline-block; background:#fff; border:1px solid #e5e7eb; border-radius:16px; padding:1.5rem 1.25rem; box-shadow: 0 10px 30px rgba(17,24,39,.06); }
-.price { font-family:'Playfair Display', serif; font-size: 2.4rem; margin-bottom:.5rem; }
-.list { list-style: none; padding: 0; margin: 0 0 1rem; color:#374151; }
-.list li { margin: .2rem 0; }
-.btn-primary { display:inline-block; padding: .75rem 1.1rem; border-radius: 999px; text-decoration:none; background:#111827; color:#fff; }
-.btn-primary:hover { filter: brightness(1.05); }
+/* Animation classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom font family */
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
 </style>
